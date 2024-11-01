@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "fail": "docker run --rm -it $(docker build --build-arg NODE_VERSION=22.10.0 -q .)",
+    "success": "docker run --rm -it $(docker build --build-arg NODE_VERSION=22.9.0 -q .)"
+  }
+}
